@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.top {
+    background-color: #960000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.welcome {
+    display: flex; 
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.welcomeText{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 15px;
+}
+
+button {
+
+    background-color: #FCCC00;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.welcomeImage {
+    display: flex;
+    flex: 1; 
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 15px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselPhotos{
+
+}
+
+.carouselText, p {
+    display: flex; 
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #960000;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
