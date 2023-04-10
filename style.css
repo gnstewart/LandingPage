@@ -1,18 +1,18 @@
 body {
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 1;
     margin: 0;
     width: 100%;
     height: auto;
 }
 
 .top {
-    background-color: #960000;
+    background-color: #1f2937;
     color: white;
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 1;
 }
 
 .header {
@@ -22,6 +22,7 @@ body {
 
 .logo {
     margin-left: 15px;
+    display: flex;
 }
 
 .links {
@@ -31,6 +32,7 @@ body {
     decoration: none;
     color: white;
     margin-right: 15px;
+    gap: 10px;
 }
 
 a {
@@ -41,34 +43,36 @@ a {
 
 .welcome {
     display: flex; 
-    justify-content: space-between;
-    margin: 10px;
+    flex: 1;
+    justify-content: space-evenly;
 }
 
 .welcomeText{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 1;
     align-items: center;
     justify-content: center;
-    margin-right: 50px;
-    margin-left: 15px;
+    padding-left: 50px;
 }
 
 button {
-
-    background-color: #FCCC00;
+    background-color: #3884ef;
     font-weight: bold;
+    color: white;
     padding: 10px;
+    border-style: solid;
+    border-color: white;
 }
 
-.welcomeImage {
+.welcomeImage, img {
     display: flex;
-    flex: 1; 
-    justify-content: flex-end;
-    gap: 10px;
-    margin-right: 15px;
+    flex: 1 0 auto;
+    justify-content: flex-start;
+    padding-right: 50px;
+    max-width: 750px;
+    max-height: auto;
+    margin-bottom: 20px;
 }
 
 .middle {
@@ -97,7 +101,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #960000;
+    background-color: #1f2937;
     color: white;
     width: 100%;
     height: 50px;
