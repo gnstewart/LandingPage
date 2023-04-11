@@ -4,7 +4,7 @@ body {
     flex: 1;
     margin: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .top {
@@ -21,17 +21,21 @@ body {
 }
 
 .logo {
-    margin-left: 15px;
+    margin-left: 20px;
     display: flex;
+}
+
+.logo h2 {
+margin-top: 30px;
 }
 
 .links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     decoration: none;
     color: white;
-    margin-right: 15px;
+    margin-right: 150px;
     gap: 10px;
 }
 
@@ -44,65 +48,166 @@ a {
 .welcome {
     display: flex; 
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
 }
 
 .welcomeText{
     display: flex;
+    font-weight: bolder;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding-left: 50px;
+}
+
+.welcomeText h1 {
+    margin-bottom: -5px;
 }
 
 button {
     background-color: #3884ef;
     font-weight: bold;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border-style: solid;
     border-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-shrink: 0;
 }
 
 .welcomeImage, img {
     display: flex;
-    flex: 1 0 auto;
-    justify-content: flex-start;
-    padding-right: 50px;
-    max-width: 750px;
-    max-height: auto;
-    margin-bottom: 20px;
+    width: 600px;
+    height: auto;
+    flex-shrink: 0;
+    margin-bottom: 50px;
 }
 
 .middle {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 .carousel {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
+    padding: 100px;
+    padding-top: 10px;
+    }
 
-.carouselPhotos{
-
-}
-
-.carouselText, p {
-    display: flex; 
-    justify-content: space-evenly;
+.about {
+        display: flex;
+        padding: 20px;
+        padding-bottom: 40px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+.carouselImgs {
+    display: flex;
+    width: 150px;
+    height: auto;
+    justify-content: center;
     gap: 50px;
+    }
+    
+.carouselImgs img {
+        width: 200px;
+        height: auto;
+        margin-bottom: -5px;
+    }
+    
+.captions {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    
+.captions p {
+        width: 200px;
+        height: auto;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+.blockQuote {
+    background-color: #e5e7eb;
+    padding: 100px;
+    gap: 20px;
+}
+
+.quote {
+font-size: 36px;
+font-weight: light;
+font-style: italic;
+color: #1F2937;
+}
+
+.attribute {
+    display: flex;
+    font-size: 30px;
+    font-weight: light;
+    color: #1F2937;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.cta {
+display: flex;
+background: white;
+justify-content: center;
+}
+
+.ctaContainer {
+    display: flex;
+    background-color:#3884ef;
+    margin: 100px;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.ctaContainer button {
+    width: 125px;
+    justify-content: center;
+}
+
+.ctaText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    width: 500px;
+}
+
+h2, .ctaText {
+    margin-bottom: -10px;
 }
 
 .footer {
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: #1f2937;
     color: white;
     width: 100%;
     height: 50px;
+    justify-content: center;
 }
+
